@@ -1280,39 +1280,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"example@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "example@workspace:."
-  dependencies:
-    "@rollup/plugin-alias": "npm:^5.1.0"
-    "@rollup/plugin-commonjs": "npm:^26.0.1"
-    "@rollup/plugin-json": "npm:^6.1.0"
-    "@rollup/plugin-node-resolve": "npm:^15.2.3"
-    "@rollup/plugin-replace": "npm:^5.0.7"
-    "@rollup/plugin-terser": "npm:^0.4.4"
-    "@rollup/plugin-typescript": "npm:^11.1.6"
-    "@types/rollup": "npm:^0.54.0"
-    "@typescript-eslint/eslint-plugin": "npm:^7.16.1"
-    "@typescript-eslint/parser": "npm:^7.16.1"
-    "@typescript-eslint/utils": "npm:^7.16.1"
-    auto-changelog: "npm:^2.4.0"
-    concurrently: "npm:^8.2.2"
-    eslint: "npm:^8.57.0"
-    nodemon: "npm:^3.1.4"
-    obsidian: "npm:latest"
-    prettier: "npm:^3.3.3"
-    ps-list: "npm:^8.1.1"
-    rollup: "npm:^4.20.0"
-    rollup-plugin-bundle-stats: "npm:^4.13.4"
-    rollup-plugin-copy: "npm:^3.5.0"
-    rollup-plugin-visualizer: "npm:^5.12.0"
-    terser: "npm:^5.31.3"
-    tslib: "npm:^2.6.3"
-    typescript: "npm:5.5.4"
-    xmind-embed-viewer: "npm:^1.2.0"
-  languageName: unknown
-  linkType: soft
-
 "exponential-backoff@npm:^3.1.1":
   version: 3.1.1
   resolution: "exponential-backoff@npm:3.1.1"
@@ -3303,6 +3270,39 @@ __metadata:
   checksum: 10c0/3acb170049268fc2b8c7c61073f0fabf84e2fe9e8e3f81831bde94fc1000b9328ebffcb3104dd1f3652926cc16855cbfaa410d9f8c231180c269f18d9f7bfff7
   languageName: node
   linkType: hard
+
+"xmind-viewer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "xmind-viewer@workspace:."
+  dependencies:
+    "@rollup/plugin-alias": "npm:^5.1.0"
+    "@rollup/plugin-commonjs": "npm:^26.0.1"
+    "@rollup/plugin-json": "npm:^6.1.0"
+    "@rollup/plugin-node-resolve": "npm:^15.2.3"
+    "@rollup/plugin-replace": "npm:^5.0.7"
+    "@rollup/plugin-terser": "npm:^0.4.4"
+    "@rollup/plugin-typescript": "npm:^11.1.6"
+    "@types/rollup": "npm:^0.54.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.16.1"
+    "@typescript-eslint/parser": "npm:^7.16.1"
+    "@typescript-eslint/utils": "npm:^7.16.1"
+    auto-changelog: "npm:^2.4.0"
+    concurrently: "npm:^8.2.2"
+    eslint: "npm:^8.57.0"
+    nodemon: "npm:^3.1.4"
+    obsidian: "npm:latest"
+    prettier: "npm:^3.3.3"
+    ps-list: "npm:^8.1.1"
+    rollup: "npm:^4.20.0"
+    rollup-plugin-bundle-stats: "npm:^4.13.4"
+    rollup-plugin-copy: "npm:^3.5.0"
+    rollup-plugin-visualizer: "npm:^5.12.0"
+    terser: "npm:^5.31.3"
+    tslib: "npm:^2.6.3"
+    typescript: "npm:5.5.4"
+    xmind-embed-viewer: "npm:^1.2.0"
+  languageName: unknown
+  linkType: soft
 
 "y18n@npm:^5.0.5":
   version: 5.0.8
