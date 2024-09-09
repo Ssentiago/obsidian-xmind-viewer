@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowJs": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types", "src/typing/interfaces"],
+    "importHelpers": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "lib": ["DOM", "ES5", "ES6", "ES7"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "obsidian-extensions.d.ts",
+    "Globals.d.ts"
+  ]
+}

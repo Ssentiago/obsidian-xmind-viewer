@@ -1,0 +1,13 @@
+/node_modules/
+
+dist
+main.js
+data.json
+
+/test-vault/
+
+bundle*
+/.yarn/
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json

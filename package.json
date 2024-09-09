@@ -1,0 +1,49 @@
+{
+    "name": "xmind-viewer",
+    "packageManager": "yarn@4.4.0",
+    "author": "Sentiago",
+    "license": "Apache-2.0",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Integrate viewing of your XMind files",
+    "main": "src/main.ts",
+    "scripts": {
+        "dev": "yarn concurrently \"yarn rollup -c rollup.config.mjs -w --environment PRODUCTION:0\" \"yarn start-obsidian\"",
+        "build": "NODE_ENV=production yarn rollup -c rollup.config.mjs --environment PRODUCTION:1",
+        "lint": "yarn eslint src --ext .ts",
+        "start-obsidian": "node scripts/start-obsidian.mjs",
+        "rollup": "rollup",
+        "changelog": "npx conventional-changelog -p conventionalcommits -i check.md -s -r 1 --append\n"
+    },
+    "keywords": [],
+    "devDependencies": {
+        "@rollup/plugin-alias": "^5.1.0",
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-replace": "^5.0.7",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/rollup": "^0.54.0",
+        "@typescript-eslint/eslint-plugin": "^7.16.1",
+        "@typescript-eslint/parser": "^7.16.1",
+        "@typescript-eslint/utils": "^7.16.1",
+        "auto-changelog": "^2.4.0",
+        "concurrently": "^8.2.2",
+        "eslint": "^8.57.0",
+        "nodemon": "^3.1.4",
+        "obsidian": "latest",
+        "prettier": "^3.3.3",
+        "ps-list": "^8.1.1",
+        "rollup": "^4.20.0",
+        "rollup-plugin-bundle-stats": "^4.13.4",
+        "rollup-plugin-copy": "^3.5.0",
+        "rollup-plugin-visualizer": "^5.12.0",
+        "terser": "^5.31.3",
+        "tslib": "^2.6.3",
+        "typescript": "5.5.4"
+    },
+    "dependencies": {
+        "xmind-embed-viewer": "^1.2.0"
+    }
+}

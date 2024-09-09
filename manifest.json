@@ -1,0 +1,10 @@
+{
+    "id": "xmind-viewer",
+    "name": "XMind Viewer",
+    "version": "0.1.0",
+    "minAppVersion": "1.6.5",
+    "author": "Sentiago",
+    "authorUrl": "https://github.com/Ssentiago",
+    "description": "Integrate viewing of your XMind files",
+    "isDesktopOnly": false
+}
