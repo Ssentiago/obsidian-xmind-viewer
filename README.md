@@ -3,6 +3,7 @@
 XMind Viewer is a simple plugin for Obsidian that allows you to view XMind files directly 
 within your Obsidian vault. This plugin handles opening files with the .xmind extension and 
 creates a new XMind viewer for that file.
+**Note that an internet connection is required for the plugin to function.**
 
 ## Features
 
