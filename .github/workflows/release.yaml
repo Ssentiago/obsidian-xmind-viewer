@@ -25,8 +25,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Package assets
-        run: tar -czf dist/assets.tar.gz -C src assets
 
       - name: Create Release
         id: create_release
