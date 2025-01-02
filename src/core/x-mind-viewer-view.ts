@@ -1,12 +1,4 @@
-import {
-    App,
-    MarkdownView,
-    TextFileView,
-    WorkspaceLeaf,
-    FileView,
-    TFile,
-    IconName,
-} from 'obsidian';
+import { App, FileView, IconName, TFile, WorkspaceLeaf } from 'obsidian';
 import { XMindViewerPlugin } from './x-mind-viewer-plugin';
 import { XMindEmbedViewer } from 'xmind-embed-viewer';
 
@@ -15,6 +7,8 @@ const viewType = 'xmind-viewer';
 export class XMindViewerView extends FileView {
     plugin: XMindViewerPlugin;
     styles: Partial<CSSStyleDeclaration>;
+    viewer?: XMindEmbedViewer;
+
     constructor(leaf: WorkspaceLeaf, app: App, plugin: XMindViewerPlugin) {
         super(leaf);
         this.app = app;
@@ -43,7 +37,13 @@ export class XMindViewerView extends FileView {
 
     async onLoadFile(file: TFile): Promise<void> {
         const binary = await this.app.vault.readBinary(file);
-        new XMindEmbedViewer({
+
+        if (this.viewer) {
+            this.viewer.load(binary);
+            return;
+        }
+
+        this.viewer = new XMindEmbedViewer({
             el: this.contentEl,
             file: binary,
             region: 'global',
